@@ -1,0 +1,30 @@
+screenshot
+clock
+indicator
+
+effect-blur=6x6
+fade-in=0.7 
+
+timestr=%H:%M
+datestr=%a %e %b
+font=JetBrainsMono NF
+text-color=ffffff
+indicator-radius=200
+indicator-thickness=10
+inside-color=1b1b1b00
+key-hl-color=ffffff
+ring-color=8155BA
+
+separator-color=ffffff00
+
+text-clear-color=595959
+inside-clear-color=00000000
+ring-clear-color=595959
+
+text-wrong-color=595959
+inside-wrong-color=000000
+ring-wrong-color=1b1b1b00
+text-ver-color=595959
+inside-ver-color=00000000
+ring-ver-color=595959
+ignore-empty-password

@@ -1,0 +1,116 @@
+
+
+# Cupcake
+
+cow_say=("beavis.zen" "blowfish" "bong" "bud-frogs" "bunny" "cheese" "cower" "daemon" "default" "dragon" "dragon-and-cow" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "head-in" "hellokitty" "kiss" "kitty" "koala" "kosh" "luke-koala" "meow" "milk" "moofasa" "moose" "mutilated" "ren" "satanic" "sheep" "skeleton" "small" "sodomized" "stegosaurus" "stimpy" "supermilker" "surgery" "telebears" "three-eyes" "turkey" "turtle" "tux" "udder" "vader" "vader-koala" "www")
+
+
+# Randomly select a cow
+random_cow=${cow_say[$RANDOM % ${#cow_say[@]} ]}
+
+message_array=("Halo you cupcake", "Hiiiiiiiiiiiiiiiii", "What you doing huh -_-", "Cheating cheating", "What you up to\?", "Heyyyyyyyyy", "Oh you\'re on the terminal again", "Did you shower\?", "Ohooo terminal terminal", "Go drink water, ik you didn\'t", "Hiiiiiiii")
+
+# for i in message_array
+# do 
+#     echo $i
+#
+# done
+
+# Randomly select a message
+
+random_message=${message_array[$RANDOM % ${#message_array[@]} ]}
+
+# generate the command
+
+command="cowsay -f $random_cow $random_message"
+
+#execute the command
+
+eval $command      
+
+plugins=(git
+    zsh-autosuggestions)
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias codi='code .'
+alias music='spotify .'
+alias fili='dolphin'
+alias cloni='git clone'
+alias pulli='git pull'
+alias pushi='git pushi'
+alias getuni='cd /home/shreya/Documents/Stuff/PES'
+alias getproji='cd /home/shreya/Documents/Stuff/Projects-Repos'
+alias hi='~/hi.sh'
+alias lock='~/swaylock_delayed.zsh'
+alias c='clear'
+alias n='nvim .'
+alias snow='snowmachine snow --particle="*" --stack=pile --speed=25'   
+alias luaInit='cd /home/shreya/.config/nvim/lua/user/ && nvim .'
+alias wofi='wofi -H 400 -W 600 --show drun --insensitive -I'
+alias minecraft='cd Downloads && java -jar TLauncher-2.885.jar'
+# Function to adjust screen timeout when Okular is opened
+okular() {
+    command okular "$@"  # Run Okular with any provided arguments
+    # Check if Okular is still running after it's closed
+    while pgrep -x "okular" > /dev/null; do
+        xset s off  # Disable screen saver
+        sleep 1     # Check every second
+    done
+    xset s on       # Enable screen saver when Okular is closed
+}
+
+export PATH="~/say-cupcake:$PATH"
+export PATH="/home/shreya/tools/flutter/bin:$PATH"
+export PATH="/opt/android-sdk/platform-tools:$PATH"
+
+# Vim mode. Press esc to go to vim mode
+
+# bun completions
+[ -s "/home/shreya/.bun/_bun" ] && source "/home/shreya/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+SAVEHIST=50000
+HISTFILE=~/.zsh_history
+export CALCURSE_EDITOR=/usr/bin/nvim
+export VISUAL=nvim
+
+# Created by `pipx` on 2023-12-02 13:17:17
+export PATH="$PATH:/home/shreya/.local/bin"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
