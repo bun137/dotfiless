@@ -33,7 +33,7 @@ window#waybar {
 #taskbar,
 #bluetooth,
 #pulseaudio,
-#backlight
+#backlight,
 #custom-updates,
 #custom-power,
 #custom-l_end,
@@ -222,7 +222,6 @@ tooltip {
 
 #backlight {
    color: #f5a500;
-   background: #191724;
 }
 
 #custom-r_end {
