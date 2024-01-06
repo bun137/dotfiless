@@ -60,6 +60,8 @@ alias snow='snowmachine snow --particle="*" --stack=pile --speed=25'
 alias luaInit='cd /home/shreya/.config/nvim/lua/user/ && nvim .'
 alias wofi='wofi -H 400 -W 600 --show drun --insensitive -I'
 alias minecraft='cd Downloads && java -jar TLauncher-2.885.jar'
+alias nvidiausage='watch nvidia-smi'
+alias intelusage='sudo intel_gpu_top'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
