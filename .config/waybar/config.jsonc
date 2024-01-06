@@ -79,8 +79,7 @@
   },
 
   "clock": {
-    "format": "{: %I:%M %p 󰃭 %a %d %b}",
-    "format-alt": "{:󰥔 %H:%M  %b %Y}"
+    "format": "{: %I:%M %p 󰃭 %a %d %b %Y}",
   },
 
   "custom/weather": {
