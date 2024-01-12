@@ -63,6 +63,7 @@ alias wofi='wofi -H 400 -W 600 --show drun --insensitive -I'
 alias minecraft='cd Downloads && java -jar TLauncher-2.885.jar'
 alias nvidiausage='watch nvidia-smi'
 alias intelusage='sudo intel_gpu_top'
+alias shark='cd /home/shreya/display3d/ && cargo run --release -- resources/blahaj.obj -t 0,0,5.5'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
