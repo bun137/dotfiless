@@ -96,7 +96,6 @@
     "all-outputs": true,
     "on-click": "activate",
     "persistent_workspaces": {
-      "1": []
     }
   },
 
