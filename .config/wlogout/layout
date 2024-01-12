@@ -33,3 +33,9 @@
     "text" : "Suspend",
     "keybind" : "u"
 }
+
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "Hibernate"
+}
