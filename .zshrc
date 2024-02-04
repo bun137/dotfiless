@@ -1,10 +1,6 @@
-
 export GTK_THEME="Adwaita-dark"
-
 # Cupcake
-
 cow_say=("beavis.zen" "blowfish" "bong" "bud-frogs" "bunny" "cheese" "cower" "daemon" "default" "dragon" "dragon-and-cow" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "head-in" "hellokitty" "kiss" "kitty" "koala" "kosh" "luke-koala" "meow" "milk" "moofasa" "moose" "mutilated" "ren" "satanic" "sheep" "skeleton" "small" "sodomized" "stegosaurus" "stimpy" "supermilker" "surgery" "telebears" "three-eyes" "turkey" "turtle" "tux" "udder" "vader" "vader-koala" "www")
-
 
 # Randomly select a cow
 random_cow=${cow_say[$RANDOM % ${#cow_say[@]} ]}
@@ -95,26 +91,5 @@ export VISUAL=nvim
 
 # Created by `pipx` on 2023-12-02 13:17:17
 export PATH="$PATH:/home/shreya/.local/bin"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CPLUS_INCLUDE_PATH="/opt/cuda/targets/x86_64-linux/include/:$CPLUS_INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH
