@@ -43,10 +43,10 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 alias codi='code .'
 alias music='spotify .'
-alias fili='dolphin'
+alias fili='thunar .'
 alias cloni='git clone'
 alias pulli='git pull'
-alias pushi='git pushi'
+alias pushi='git push'
 alias getuni='cd /home/shreya/Documents/Stuff/PES'
 alias getproji='cd /home/shreya/Documents/Stuff/Projects-Repos'
 alias hi='~/hi.sh'
