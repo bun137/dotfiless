@@ -1,6 +1,6 @@
-
+@import '/home/shreya/.config/wofi/catppuccin.css';
 * {
-    font-family: 'CaskaydiaCove Nerd Font mono';
+    font-family: 'JetBrainsMono Nerd Font'
     font-size: 14px;
  }
 
