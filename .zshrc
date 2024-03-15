@@ -94,3 +94,5 @@ export VISUAL=nvim
 export PATH="$PATH:/home/shreya/.local/bin"
 CPLUS_INCLUDE_PATH="/opt/cuda/targets/x86_64-linux/include/:$CPLUS_INCLUDE_PATH"
 export CPLUS_INCLUDE_PATH
+export PATH="$PATH:/home/shreya/.cargo/bin"
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
