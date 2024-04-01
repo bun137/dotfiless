@@ -15,7 +15,7 @@
 
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "~/shutdown_delayed.zsh",
     "text" : "Shutdown",
     "keybind" : "s"
 }
