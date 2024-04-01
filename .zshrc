@@ -27,7 +27,7 @@ eval $command
 
 plugins=(git
     zsh-autosuggestions)
-
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -59,7 +59,7 @@ alias wofi='wofi -H 400 -W 600 --show drun --insensitive -I'
 alias nvidiausage='watch nvidia-smi'
 alias intelusage='sudo intel_gpu_top'
 alias shark='cd /home/shreya/display3d/ && cargo run --release -- resources/blahaj.obj -t 0,0,5.5'
-alias minecraft='cd /home/shreya/Downloads && prime-run java -jar TLauncher-2.885.jar'
+alias minecraft='cd /home/shreya/Downloads && prime-run java -jar TLauncher-2.899.jar'
 alias neofetch='neofetch --ascii_distro arch'
 # Function to adjust screen timeout when Okular is opened
 okular() {
