@@ -37,3 +37,4 @@ jdk21-openjdk
 nvidia-prime
 ranger
 npm
+node
