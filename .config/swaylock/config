@@ -27,4 +27,5 @@ ring-wrong-color=1b1b1b00
 text-ver-color=595959
 inside-ver-color=00000000
 ring-ver-color=595959
+text-caps-lock-color=009ddc
 ignore-empty-password
