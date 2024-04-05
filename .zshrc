@@ -61,7 +61,9 @@ alias intelusage='sudo intel_gpu_top'
 alias shark='cd /home/shreya/display3d/ && cargo run --release -- resources/blahaj.obj -t 0,0,5.5'
 alias minecraft='cd /home/shreya/Downloads && prime-run java -jar TLauncher-2.899.jar'
 alias neofetch='neofetch --ascii_distro arch'
-
+alias 'rm -rf /'='echo "WOAH WOAH WOAH what are you doinggg"'
+alias 'rm -rf /*'='echo "WOAH WOAH WAAOHH what are you doinggg"'
+alias 'rm -rf *'='echo "HOLY SHEESHH what are you doinggg"'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
