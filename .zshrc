@@ -61,6 +61,7 @@ alias intelusage='sudo intel_gpu_top'
 alias shark='cd /home/shreya/display3d/ && cargo run --release -- resources/blahaj.obj -t 0,0,5.5'
 alias minecraft='cd /home/shreya/Downloads && prime-run java -jar TLauncher-2.899.jar'
 alias neofetch='neofetch --ascii_distro arch'
+
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -75,7 +76,7 @@ okular() {
 export PATH="~/say-cupcake:$PATH"
 export PATH="/home/shreya/tools/flutter/bin:$PATH"
 export PATH="/opt/android-sdk/platform-tools:$PATH"
-
+export PATH="/usr/local/:$PATH"
 # Vim mode. Press esc to go to vim mode
 
 # bun completions
