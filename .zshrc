@@ -64,6 +64,8 @@ alias neofetch='neofetch --ascii_distro arch'
 alias 'rm -rf /'='echo "WOAH WOAH WOAH what are you doinggg"'
 alias 'rm -rf /*'='echo "WOAH WOAH WAAOHH what are you doinggg"'
 alias 'rm -rf *'='echo "HOLY SHEESHH what are you doinggg"'
+alias 'remote'='cd /home/shreya/Documents/Stuff/Projects-Repos/Spotuino/Arduino-Controlled-Spotify/ && sudo chmod a+rw /dev/ttyUSB0 && python SpotifyController.py'
+
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
