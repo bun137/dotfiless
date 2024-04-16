@@ -64,8 +64,10 @@ alias neofetch='neofetch --ascii_distro arch'
 alias 'rm -rf /'='echo "WOAH WOAH WOAH what are you doinggg"'
 alias 'rm -rf /*'='echo "WOAH WOAH WAAOHH what are you doinggg"'
 alias 'rm -rf *'='echo "HOLY SHEESHH what are you doinggg"'
-alias 'remote'='cd /home/shreya/Documents/Stuff/Projects-Repos/Spotuino/Arduino-Controlled-Spotify/ && sudo chmod a+rw /dev/ttyUSB0 && python SpotifyController.py &'
-alias 'arduino'='cd /home/shreya/Downloads/arduino-ide_2.3.2_Linux_64bit/ && sudo chmod a+rw /dev/ttyUSB0 && ./arduino-ide > /dev/null 2>&1 &'
+alias 'remote'='cd /home/shreya/Documents/Stuff/Projects-Repos/Spotuino/Arduino-Controlled-Spotify/  && python SpotifyController.py &'
+alias 'arduino'='cd /home/shreya/Downloads/arduino-ide_2.3.2_Linux_64bit/  && ./arduino-ide > /dev/null 2>&1 &'
+alias 'braveMess' = 'rm -fr .config/BraveSoftware/Brave-Browser/Default/GPUCache/'
+alias 'usb' = 'sudo chmod a+rw /dev/ttyUSB0 '
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
