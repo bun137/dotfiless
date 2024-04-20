@@ -66,8 +66,8 @@ alias 'rm -rf /*'='echo "WOAH WOAH WAAOHH what are you doinggg"'
 alias 'rm -rf *'='echo "HOLY SHEESHH what are you doinggg"'
 alias 'remote'='cd /home/shreya/Documents/Stuff/Projects-Repos/Spotuino/Arduino-Controlled-Spotify/  && python SpotifyController.py &'
 alias 'arduino'='cd /home/shreya/Downloads/arduino-ide_2.3.2_Linux_64bit/  && ./arduino-ide > /dev/null 2>&1 &'
-alias 'braveMess' = 'rm -fr .config/BraveSoftware/Brave-Browser/Default/GPUCache/'
-alias 'usb' = 'sudo chmod a+rw /dev/ttyUSB0 '
+alias 'glitch'='rm -rf .config/BraveSoftware/Brave-Browser/Default/GPUCache/'
+alias 'usb'='sudo chmod a+rw /dev/ttyUSB0 '
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -103,3 +103,5 @@ CPLUS_INCLUDE_PATH="/opt/cuda/targets/x86_64-linux/include/:$CPLUS_INCLUDE_PATH"
 export CPLUS_INCLUDE_PATH
 export PATH="$PATH:/home/shreya/.cargo/bin"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+export GPG_TTY=$(tty)
