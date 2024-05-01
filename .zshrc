@@ -67,7 +67,9 @@ alias 'rm -rf *'='echo "HOLY SHEESHH what are you doinggg"'
 alias 'remote'='cd /home/shreya/Documents/Stuff/Projects-Repos/Spotuino/Arduino-Controlled-Spotify/  && python SpotifyController.py &'
 alias 'arduino'='cd /home/shreya/Downloads/arduino-ide_2.3.2_Linux_64bit/  && ./arduino-ide > /dev/null 2>&1 &'
 alias 'glitch'='rm -rf .config/BraveSoftware/Brave-Browser/Default/GPUCache/'
-alias 'usb'='sudo chmod a+rw /dev/ttyUSB0 '
+alias 'usb0'='sudo chmod a+rw /dev/ttyUSB0 '
+alias 'usb1'='sudo chmod a+rw /dev/ttyUSB1 '
+alias 'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
