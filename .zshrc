@@ -41,7 +41,6 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias codi='code .'
 alias music='spotify &'
 alias fili='thunar .'
 alias cloni='git clone'
@@ -70,6 +69,7 @@ alias 'glitch'='rm -rf .config/BraveSoftware/Brave-Browser/Default/GPUCache/'
 alias 'usb0'='sudo chmod a+rw /dev/ttyUSB0 '
 alias 'usb1'='sudo chmod a+rw /dev/ttyUSB1 '
 alias 'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+alias 'owui'='source /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/venv/bin/activate && bash /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/start.sh'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -107,3 +107,23 @@ export PATH="$PATH:/home/shreya/.cargo/bin"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 export GPG_TTY=$(tty)
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/usr/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/home/shreya/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+#
+
+
+export CMAKE_Fortran_COMPILER=/usr/bin/gfortran
+
+# opam configuration
+[[ ! -r /home/shreya/.opam/opam-init/init.zsh ]] || source /home/shreya/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
