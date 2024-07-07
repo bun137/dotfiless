@@ -1,4 +1,3 @@
-export GTK_THEME="Adwaita-dark"
 # Cupcake
 cow_say=("beavis.zen" "blowfish" "bong" "bud-frogs" "bunny" "cheese" "cower" "daemon" "default" "dragon" "dragon-and-cow" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "head-in" "hellokitty" "kiss" "kitty" "koala" "kosh" "luke-koala" "meow" "milk" "moofasa" "moose" "mutilated" "ren" "satanic" "sheep" "skeleton" "small" "sodomized" "stegosaurus" "stimpy" "supermilker" "surgery" "telebears" "three-eyes" "turkey" "turtle" "tux" "udder" "vader" "vader-koala" "www")
 
@@ -70,6 +69,7 @@ alias 'usb0'='sudo chmod a+rw /dev/ttyUSB0 '
 alias 'usb1'='sudo chmod a+rw /dev/ttyUSB1 '
 alias 'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias 'owui'='source /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/venv/bin/activate && bash /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/start.sh'
+alias 'spt-a'='kitty @ launch spt'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -127,3 +127,19 @@ export CMAKE_Fortran_COMPILER=/usr/bin/gfortran
 
 # opam configuration
 [[ ! -r /home/shreya/.opam/opam-init/init.zsh ]] || source /home/shreya/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/shreya/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/shreya/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/shreya/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/shreya/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
