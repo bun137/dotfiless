@@ -130,7 +130,7 @@
 
   "pulseaudio": {
     "format": "{icon} {volume}",
-    "format-muted": "",
+    "format-muted": "  ",
     "on-click": "pavucontrol -t 3",
     "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
     "on-scroll-up":"amixer -q sset Master 5%+", 
@@ -172,7 +172,7 @@
     "icon-size": 20,
     "spacing": 9
   },
-"cava": {
+  "cava": {
         "cava_config": "/home/shreya/.config/cava/config",
         "framerate": 30,
         "autosens": 1,
@@ -193,7 +193,8 @@
         "actions": {
                    "on-click-right": "mode"
                    }
-    },
+  },
+
   "custom/power": {
     "format": "{}",
     "exec": "echo ; echo  logout",

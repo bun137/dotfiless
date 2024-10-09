@@ -18,6 +18,7 @@ window#waybar {
 #memory,
 #battery,
 #temperature,
+#custom-cava,
 #clock,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
@@ -260,7 +261,7 @@ tooltip {
     margin-left: 9px;
     padding-left: 3px;
 }
-#cava {
+#custom-cava {
     color: #8FBC8F;
     border-left: 0px;
     border-right: 0px;
