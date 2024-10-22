@@ -24,8 +24,15 @@ command="cowsay -f $random_cow $random_message"
 
 eval $command      
 
-plugins=(git
-    zsh-autosuggestions)
+export ZSH="~/.oh-my-zsh"
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+export ZSH="/home/shreya/.oh-my-zsh"
+export PATH=$HOME/bin:/usr/local/bin:$ZSH:$PATH
+source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -142,4 +149,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
