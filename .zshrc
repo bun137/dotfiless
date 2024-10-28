@@ -24,6 +24,10 @@ command="cowsay -f $random_cow $random_message"
 
 eval $command      
 
+
+bindkey -v
+export KEYTIMEOUT=1
+
 export ZSH="~/.oh-my-zsh"
 plugins=(
     git
@@ -46,13 +50,13 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+alias cl='clear'
 alias music='spotify &'
 alias fili='thunar .'
 alias cloni='git clone'
 alias pulli='git pull'
 alias pushi='git push'
-alias getuni='cd /home/shreya/Documents/Stuff/PES/sem4'
+alias getuni='cd /home/shreya/Documents/Stuff/PES/sem5'
 alias getproji='cd /home/shreya/Documents/Stuff/Projects-Repos'
 alias hi='~/hi.sh'
 alias lock='~/swaylock_delayed.zsh'
@@ -77,6 +81,7 @@ alias 'usb1'='sudo chmod a+rw /dev/ttyUSB1 '
 alias 'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias 'owui'='source /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/venv/bin/activate && bash /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/start.sh'
 alias 'spt-a'='kitty @ launch spt'
+alias 'ls'='eza --icons'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -87,12 +92,12 @@ okular() {
     done
     xset s on       # Enable screen saver when Okular is closed
 }
-
+export EDITOR=/usr/bin/nvim
+export VISUAL=$EDITOR
 export PATH="~/say-cupcake:$PATH"
 export PATH="/home/shreya/tools/flutter/bin:$PATH"
 export PATH="/opt/android-sdk/platform-tools:$PATH"
 export PATH="/usr/local/:$PATH"
-# Vim mode. Press esc to go to vim mode
 
 # bun completions
 [ -s "/home/shreya/.bun/_bun" ] && source "/home/shreya/.bun/_bun"
