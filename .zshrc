@@ -1,30 +1,30 @@
-# Cupcake
-cow_say=("beavis.zen" "blowfish" "bong" "bud-frogs" "bunny" "cheese" "cower" "daemon" "default" "dragon" "dragon-and-cow" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "head-in" "hellokitty" "kiss" "kitty" "koala" "kosh" "luke-koala" "meow" "milk" "moofasa" "moose" "mutilated" "ren" "satanic" "sheep" "skeleton" "small" "sodomized" "stegosaurus" "stimpy" "supermilker" "surgery" "telebears" "three-eyes" "turkey" "turtle" "tux" "udder" "vader" "vader-koala" "www")
-
-# Randomly select a cow
-random_cow=${cow_say[$RANDOM % ${#cow_say[@]} ]}
-
-message_array=("Halo you cupcake", "Hiiiiiiiiiiiiiiiii", "What you doing huh -_-", "Cheating cheating", "What you up to\?", "Heyyyyyyyyy", "Oh you\'re on the terminal again", "Did you shower\?", "Ohooo terminal terminal", "Go drink water, ik you didn\'t", "Hiiiiiiii")
-
-# for i in message_array
-# do 
-#     echo $i
+# # Cupcake
+# cow_say=("beavis.zen" "blowfish" "bong" "bud-frogs" "bunny" "cheese" "cower" "daemon" "default" "dragon" "dragon-and-cow" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "head-in" "hellokitty" "kiss" "kitty" "koala" "kosh" "luke-koala" "meow" "milk" "moofasa" "moose" "mutilated" "ren" "satanic" "sheep" "skeleton" "small" "sodomized" "stegosaurus" "stimpy" "supermilker" "surgery" "telebears" "three-eyes" "turkey" "turtle" "tux" "udder" "vader" "vader-koala" "www")
 #
-# done
-
-# Randomly select a message
-
-random_message=${message_array[$RANDOM % ${#message_array[@]} ]}
-
-# generate the command
-
-command="cowsay -f $random_cow $random_message"
-
-#execute the command
-
-eval $command      
-
-
+# # Randomly select a cow
+# random_cow=${cow_say[$RANDOM % ${#cow_say[@]} ]}
+#
+# message_array=("Halo you cupcake", "Hiiiiiiiiiiiiiiiii", "What you doing huh -_-", "Cheating cheating", "What you up to\?", "Heyyyyyyyyy", "Oh you\'re on the terminal again", "Did you shower\?", "Ohooo terminal terminal", "Go drink water, ik you didn\'t", "Hiiiiiiii")
+#
+# # for i in message_array
+# # do 
+# #     echo $i
+# #
+# # done
+#
+# # Randomly select a message
+#
+# random_message=${message_array[$RANDOM % ${#message_array[@]} ]}
+#
+# # generate the command
+#
+# command="cowsay -f $random_cow $random_message"
+#
+# #execute the command
+#
+# eval $command      
+#
+#
 bindkey -v
 export KEYTIMEOUT=1
 
