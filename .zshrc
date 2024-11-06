@@ -1,3 +1,4 @@
+source cup.zsh 
 bindkey -v
 export KEYTIMEOUT=1
 
