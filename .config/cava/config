@@ -26,7 +26,7 @@ bars = 12
 ; bar_width = 2
 ; bar_spacing = 1
 # bar_height is only used for output in "noritake" format
-; bar_height = 32
+; bar_height = 12
 
 # For SDL width and space between bars is in pixels, defaults are:
 ; bar_width = 20
@@ -187,7 +187,7 @@ gradient_color_8 = '#f38ba8'
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 ; monstercat = 0
-; waves = 0
+; waves = 1
 
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
