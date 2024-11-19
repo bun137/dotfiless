@@ -1,4 +1,3 @@
-source cup.zsh 
 bindkey -v
 export KEYTIMEOUT=1
 
@@ -56,6 +55,7 @@ alias 'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias 'owui'='source /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/venv/bin/activate && bash /home/shreya/Documents/Stuff/Projects-Repos/open-webui/backend/start.sh'
 alias 'spt-a'='kitty @ launch spt'
 alias 'ls'='eza --icons'
+alias 'move'='cd /home/shreya/Documents/Stuff/Projects-Repos/terminal_song_player/ && source venv/bin/activate && python term.py'
 # Function to adjust screen timeout when Okular is opened
 okular() {
     command okular "$@"  # Run Okular with any provided arguments
@@ -128,3 +128,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#
+#
+
+
+
+source ~/cup.zsh 
