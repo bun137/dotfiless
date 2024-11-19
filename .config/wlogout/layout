@@ -29,7 +29,7 @@
 
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "~/suspend_lock.zsh",
     "text" : "Suspend",
     "keybind" : "u"
 }
