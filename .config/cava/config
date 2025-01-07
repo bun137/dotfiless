@@ -3,7 +3,6 @@
 data_format = ascii
 ascii_max_range = 9
 noise_reduction = 0.77
-bars = 12
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
 ; mode = normal
 

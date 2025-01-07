@@ -72,6 +72,7 @@ export PATH="~/say-cupcake:$PATH"
 export PATH="/home/shreya/tools/flutter/bin:$PATH"
 export PATH="/opt/android-sdk/platform-tools:$PATH"
 export PATH="/usr/local/:$PATH"
+export PATH="/home/shreya/go/bin:$PATH"
 
 # bun completions
 [ -s "/home/shreya/.bun/_bun" ] && source "/home/shreya/.bun/_bun"
@@ -106,9 +107,9 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-#
 
 
+source ~/cup.zsh 
 export CMAKE_Fortran_COMPILER=/usr/bin/gfortran
 
 # opam configuration
@@ -128,9 +129,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-#
-#
-
-
-
-source ~/cup.zsh 
