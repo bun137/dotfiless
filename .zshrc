@@ -1,7 +1,7 @@
 bindkey -v
 export KEYTIMEOUT=1
+export ZSH="$HOME/.oh-my-zsh"
 
-export ZSH="~/.oh-my-zsh"
 plugins=(
     git
     zsh-autosuggestions
@@ -29,7 +29,7 @@ alias fili='thunar .'
 alias cloni='git clone'
 alias pulli='git pull'
 alias pushi='git push'
-alias getuni='cd /home/shreya/Documents/Stuff/PES/sem5'
+alias getuni='cd /home/shreya/Documents/Stuff/PES/sem6'
 alias getproji='cd /home/shreya/Documents/Stuff/Projects-Repos'
 alias hi='~/hi.sh'
 alias lock='~/swaylock_delayed.zsh'
